@@ -13,7 +13,8 @@ namespace EFmodelCHECK.Models
         public int ExamId { get; set; }
         public int MarksObt { get; set; }
         public int MarkedById { get; set; }
-        public DateTime MarkedOn { get; set; }
+        public DateTime UploadedOn { get; set; }
+
 
         public virtual Student Student { get; set; }
         public virtual Exam Exam { get; set; }

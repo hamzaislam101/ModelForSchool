@@ -11,8 +11,10 @@ namespace EFmodelCHECK.Models
         public int Id { get; set; }
         public int StudentId { get; set; }
         public DateTime Date { get; set; }
-        public DateTime AddedAt { get; set; }
+        public DateTime UploadedOn { get; set; }
+        public int UploadedById { get; set; }
 
         public virtual Student Student { get; set; }
+        public virtual User UploadedBy { get; set; }
     }
 }

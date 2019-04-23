@@ -12,6 +12,8 @@ namespace EFmodelCHECK.Models
         public int ClassId { get; set; }
         public string File { get; set; }
         public string Session { get; set; }
+        public int Version { get; set; }
+        public DateTime ImplementedOn { get; set; }
 
         public Class Class { get; set; }
     }

@@ -12,9 +12,10 @@ namespace EFmodelCHECK.Models
         public int StudentId { get; set; }
         public DateTime Month { get; set; }
         public int Amount { get; set; }
-        public string AcceptedBy { get; set; }
+        public int AcceptedById { get; set; }
         public DateTime SubmittedOn { get; set; }
 
+        public virtual User AcceptedBy { get; set; }
         public virtual Student Student { get; set; }
     }
 }

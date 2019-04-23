@@ -16,11 +16,18 @@ namespace EFmodelCHECK.Models
         public DateTime DOB { get; set; }
         public DateTime RegisteredOn { get; set; }
         public string Type { get; set; }
-        
+        public string Designation { get; set; }
+        public string Picture { get; set; }
+        public DateTime JoiningDate { get; set; }
+        public int RegisteredById { get; set; }
+        public string Contact { get; set; }
+        public string Address { get; set; }
+
         public virtual ICollection<Salary> Salary { get; set; }
         public virtual ICollection<ClassSubjects> ClassSubjects { get; set; }
         public virtual ICollection<StaffAttendance> StaffAttendance { get; set; }
         public virtual ICollection<Marks> Marks { get; set; }
         public virtual ICollection<Exam> Exams { get; set; }
+        public virtual User RegisteredBy { get; set; }
     }
 }

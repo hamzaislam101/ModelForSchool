@@ -18,9 +18,13 @@ namespace EFmodelCHECK.Models
         public DateTime RegistrationDate { get; set; }
         public int RollNumber { get; set; }
         public int ClassId { get; set; }
-        public string RegisteredBy { get; set; }
+        public string Picture { get; set; }
+        public int RegisteredById { get; set; }
+        public string Address { get; set; }
+        public string Contact { get; set; }
 
         public virtual Class Class { get; set; }
+        public virtual ICollection<User> RegisteredBy { get; set; }
         public virtual ICollection<Fees> Fees { get; set; }
         public virtual ICollection<Marks> Marks { get; set; }
         public virtual ICollection<StudentAttendance> StudentAttendance { get; set; }

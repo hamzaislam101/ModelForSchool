@@ -13,8 +13,9 @@ namespace EFmodelCHECK.Models
         public DateTime Month { get; set; }
         public int Amount { get; set; }
         public DateTime GivenOn { get; set; }
-        public string GivenBy { get; set; }
+        public int GivenById { get; set; }
 
+        public virtual User GivenBy { get; set; }
         public virtual Staff Staff { get; set; }
     }
 }
