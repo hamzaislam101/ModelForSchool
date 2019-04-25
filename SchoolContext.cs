@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolDb.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -29,6 +30,9 @@ namespace EFmodelCHECK.Models
         public DbSet<Subject> Subjectss { get; set; }
         public DbSet<TimeTable> TimeTable { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<FurnitureRecord> FurnitureRecords { get; set; }
+        public DbSet<FurnitureRemoved> FurnitureRemoved { get; set; }
+        public DbSet<FurnitureRepaired> FurnitureRepaired { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

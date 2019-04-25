@@ -23,6 +23,7 @@ namespace EFmodelCHECK.Models
         public string Address { get; set; }
         public string Contact { get; set; }
 
+
         public virtual Class Class { get; set; }
         public virtual ICollection<User> RegisteredBy { get; set; }
         public virtual ICollection<Fees> Fees { get; set; }
